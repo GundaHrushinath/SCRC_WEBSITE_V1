@@ -1,0 +1,28 @@
+{
+  "name": "scrc_web",
+  "version": "1.0.0",
+  "description": "These are the basic",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leojfrancis/scrc_web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leojfrancis/scrc_web/issues"
+  },
+  "homepage": "https://github.com/leojfrancis/scrc_web#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1"
+  }
+}

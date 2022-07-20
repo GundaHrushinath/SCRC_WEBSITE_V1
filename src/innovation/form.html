@@ -1,0 +1,236 @@
+---
+title: form - Smart City Research Center
+layout: 'base.html'
+---
+  <style>
+    form     { display: table;      }
+    p        { display: table-row;  }
+    label    { display: table-cell; }
+    input    { display: table-cell; }
+    textarea { display: table-cell; }
+    select   { display: table-cell; }
+  </style>
+---
+title: Form - Smart City Research Center
+layout: 'base.html'
+---
+  <main id="main" class="main-top">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs" style="background-image:url(../assets/img/challenge/challenge.jpg); background-size: cover; padding-top:90px; margin-top:100px">
+      <div class="container" style="color:white;">
+
+        <ol>
+          <li><a href="/" style="color:white;">Home</a></li>
+          <li><a href="/startup" style="color:white;">Startups</a></li>
+          <li><a href="/challenge" style="color:white;">Challenges and Hackathons</a></li>
+          <li><a href="/challenge01" style="color:white;"> Water Challenge</a></li>
+        </ol>
+        <h2 style="font-weight: bold;">Water Challenge</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog" style="padding-top:20px">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-9 entries">
+
+            <article class="entry entry-single">
+
+              <div class="container">
+
+        <div class="portfolio-details-container">
+            <form style="color:#043c6d;" >
+                <p>
+                <label for="tname">Team name</label>
+                <input type="text" id="tname" name="tname"><br><br>
+                </p>
+                <p>
+                <label for="tnum">Number of members</label>
+                <input type="number" id="tnum" name="tnum"><br><br>
+                </p>
+                <p>
+                <label for="cnum">Contact number</label>
+                <input type="text" id="cnum" name="cnum"><br><br>
+                </p>
+                <p>
+                <label for="cmail">Contact mail</label>
+                <input type="text" id="cmail" name="cmail"><br><br>
+                </p>
+                <p> 
+                <label for="theme">Theme</label>
+                <select id="theme" name="theme">
+                  <option value="Select">Select </option>
+                  <option value="Non-revenue Water">Non-revenue Water </option>
+                  <option value="Water Quality and Quantity Monitoring">Water Quality and Quantity Monitoring</option>
+                  <option value="Waste water industrial/sewerage etc and rain-water">Waste water industrial/sewerage etc and rain-water</option>
+                  <option value="Water drains">Water drains</option>
+                  <option value="Open Innovation">Open Innovation</option>
+                </select><br><br>
+                </p>
+                <p>
+                  <label for="sensors">Technology used</label>
+                  <input type="text" id="sensors" name="sensors"><br><br>
+                </p>
+                
+                
+                <label for="ideaarea">Idea</label>
+                <textarea name="ideaarea" rows="1" cols="50" id="idea" ></textarea><br><br>
+                </p>
+                </p>
+                  
+                  
+                <label for="deployement">List of deployements</label>
+                <textarea name="deployement" rows="1" cols="50" id="deployement" ></textarea><br><br>
+                </p>
+                
+              </form>
+              <button id="addmembers" onclick="addfields()">Add members</button>
+              <script>
+                 
+                  function addfields(){
+                    document.getElementById("submit").disabled = false;
+                      if (document.getElementById("tnum").value == ""){
+                        window.alert("Please Enter Number of team members");
+                      }
+                      else{
+                          document.getElementById("addmembers").remove();
+                          var tnum=parseInt(document.getElementById("tnum").value);
+                          console.log(tnum);
+                          var str;
+                          for( var i=0 ;i<tnum;i++){
+                              str='<h2>Member'+String(i+1)+'</h2><p><label for="fname'+String(i)+'">First name</label>'
+                              str=str+'<input type="text" id="fname'+String(i)+'" name="fname"></p><br><br>'
+                              str=str+'<p><label for="mname'+String(i)+'">Middle name</label>'
+                              str=str+'<input type="text" id="mname'+String(i)+'" name="mname"></p><br><br>'
+                              str=str+'<p><label for="lname'+String(i)+'">Last name</label>'
+                              str=str+'<input type="text" id="lname'+String(i)+'" name="lname"></p><br><br>'
+                              str=str+'<p><label for="pno'+String(i)+'">Phone Number</label>'
+                              str=str+'<input type="text" id="pno'+String(i)+'" name="pno"></p><br><br>'
+                              str=str+'<p><label for="email'+String(i)+'">Email</label>'
+                              str=str+'<input type="text" id="email'+String(i)+'" name="email" ></p><br><br>'
+                              $("form").append(str); 
+                          }
+                      }
+                  }
+
+                  
+              </script>
+        </div>
+
+        <div class="portfolio-description">
+
+        </div>
+
+      </div>
+
+            </article><!-- End blog entry -->
+
+            
+
+          </div><!-- End blog entries list -->
+
+          <div class="col-lg-3">
+
+            <div class="sidebar" >
+              
+              <div class="sidebar-item categories" >
+                <button id="submit" onclick="submission()" disabled>Submit</button>  
+                <script>
+                  function submission(){
+                    var data={}
+                    data['TeamName']=document.getElementById('tname').value;
+                    if(document.getElementById('tname').value==""){
+                      window.alert("Enter Team Name");
+                      return;
+                    }
+                    data['TeamNum']=document.getElementById('tnum').value;
+                    if(document.getElementById('tnum').value==""){
+                      window.alert("Enter number of Team members");
+                      return;
+                    }
+                    data['ContactNum']=document.getElementById('cnum').value;
+                    if(document.getElementById('cnum').value=="" || (document.getElementById('cnum').value).length < 10){
+                      window.alert("Enter Team Contact Number");
+                      return;
+                    }
+                    data['ContactMail']=document.getElementById('cmail').value;
+                    if(document.getElementById('cmail').value=="" || !(String(document.getElementById('cmail').value).includes('@',1)) || !(String(document.getElementById('cmail').value).includes('.',(document.getElementById('cmail').value).indexOf('@')))){
+                      window.alert("Enter Team Mail");
+                      return;
+                    }
+                    data['Theme']=document.getElementById('theme').value;
+                    if(document.getElementById('theme').value=="Select" ){
+                      window.alert("Enter Theme");
+                      return;
+                    }
+                    data['sensors']=document.getElementById('sensors').value;
+                    if(document.getElementById('sensors').value==""){
+                      window.alert("Enter Tech Used");
+                      return;
+                    }
+                    data['idea']=document.getElementById('idea').value;
+                    if(document.getElementById('idea').value==""){
+                      window.alert("Enter Your Idea");
+                      return;
+                    }
+                    data['Deployement']=document.getElementById('deployement').value;
+                    var member={}
+                    for(var i=0; i<data['TeamNum'];i++){
+                      member[String(i)]={};
+                      member[String(i)]['fname']=document.getElementById('fname'+String(i)).value;
+                      if(document.getElementById('fname'+String(i)).value==""){
+                      window.alert("Enter Team Member "+String(i+1)+" Name");
+                      return;
+                      }
+                      member[String(i)]['mname']=document.getElementById('mname'+String(i)).value;
+                      member[String(i)]['lname']=document.getElementById('lname'+String(i)).value;
+                      if(document.getElementById('lname'+String(i)).value==""){
+                      window.alert("Enter Team Member "+String(i+1)+" Last Name");
+                      return;
+                      }
+                      member[String(i)]['pno']=document.getElementById('pno'+String(i)).value;
+                      if(document.getElementById('pno'+String(i)).value=="" || (document.getElementById('pno'+String(i)).value).length < 10){
+                      window.alert("Enter Team Member "+String(i+1)+" Phone Number");
+                      return;
+                      }
+                      member[String(i)]['email']=document.getElementById('email'+String(i)).value;
+                      if(document.getElementById('email'+String(i)).value=="" || !(String(document.getElementById('email'+String(i)).value).includes('@',1)) || !(String(document.getElementById('email'+String(i)).value).includes('.',(document.getElementById('email'+String(i)).value).indexOf('@')))){
+                      window.alert("Enter Team Member "+String(i+1)+" Email");
+                      return;
+                      }
+                    }
+                    data['member']=member
+                    console.log(data);
+
+                    $.post("http://smartcityresearch.iiit.ac.in:9000/create/",JSON.stringify(data) ,function(dt, status){
+                      alert("Data: " + dt + "\nStatus: " + status);
+                    });
+                  }
+                </script>
+                <br><br>
+                <h5 style="color:#043c6d;">Idea Phase</h5>
+                <span> Start Date</span><br>
+                <span> Jan 25, 2021, 11:00 AM </span><br>
+                <span> End Date</span><br>
+                <span> Feb 15, 2021, 11:00 AM </span><br><br>
+                <h5 style="color:#043c6d;">Project Building Phase</h5>
+                <span> Start Date</span><br>
+                <span> Mar 1, 2021, 11:00 AM </span><br>
+                <span> End Date</span><br>
+                <span> Mar 15, 2021, 11:00 AM </span>
+              </div><!-- End sidebar categories-->
+            </div><!-- End sidebar -->
+
+          </div><!-- End blog sidebar -->
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->

@@ -1,0 +1,531 @@
+---
+title: Challange03 - Smart City Research Center
+layout: 'base.html'
+---
+    <style>
+        .col-container {
+            display: table;
+            width: 100%;
+        }
+
+        .col {
+            display: table-cell;
+            padding: 16px;
+        }
+
+        .hero {
+  background: url('/assets/assets1/img/banner4.png') no-repeat top center;
+  background-size: contain;
+  height: 400px;
+  width: 100%;
+  padding: 40px;
+  background-position: center;
+  position: relative;
+  transition: transform 2s;}
+
+  .about {
+    padding: 2px 0;
+}
+
+
+.btn-group button {
+  background-color: #1e71ba; /* Green background */
+  border: 1px solid #0d4474; /* Green border */
+  color: white; /* White text */
+  padding: 10px 64px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #f1a40a;
+}
+
+
+.panel-heading [data-toggle="collapse"]:after {
+        font-family: 'fontawesome';
+        content: "\f054"; /* "play" icon */
+        float: right;
+        color: #1e71ba;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #1e71ba;
+    }
+
+    </style>
+
+    <main id="main" class="main-top">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <!-- <section id="breadcrumbs" class="breadcrumbs" style="background-image:url(/assets/img/challenge/challenge.jpg); background-size: cover; padding-top:90px; margin-top:100px">
+            <div class="container" style="color:white;">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ol>
+                            <li><a href="index.html" style="color:white;">Home</a></li>
+                            <li><a href="innovation.html" style="color:white;">Innovation</a></li>
+                            <li><a href="challenge.html" style="color:white;">Challenges and Hackathons</a></li>
+                            <li><a href="challenge01.html" style="color:white;"> Water Challenge</a></li>
+                        </ol>
+
+                        <h2 style="font-weight: bold;">Smart City Challange</h2>
+                    </div>
+                    <image src="/assets/img/partner/got.jpg" class="col-lg-2"></image>
+                    <image src="/assets/img/misc/nium.jpg" class="col-lg-2"></image>
+
+                </div>
+            </div>
+
+        </section> -->
+        <!-- End Breadcrumbs -->
+        <div class="hero-container" style="margin-top: 170px;">
+          <div class="hero"><h1 style="text-align: center; color: aliceblue; font-weight: 700; margin-top: 200px;" ></h1></div>
+          <div class="hero-stuff">
+          </div>
+        </div>
+        <div class="p-5 mb-4">
+
+          <!-- <div class="text-center outdated">
+            <button type="button" style="background-color: #f1a40a;" class="btn btn-warning font-family: Open Sans;">Challenge ended</button>
+          </div> -->
+
+        </div>
+        <!--Add Challange-->
+
+        <main id="main">
+
+
+            <!-- ======= About Section ======= -->
+            <section id="about" class="about section-bg">
+
+              <div class="container">
+
+                <div class="section-title">
+                  <h2 data-aos="fade-in">About the program</h2>
+                  <p data-aos="fade-in" style="font-family: Open Sans;">With vaccinations and a general easing of the pandemic, people, employees and students will soon return back to campuses. Smart City Living Lab at IIITH is launching “Back to campus startup challenge”, a unique platform for the private and public sector to discover digital capabilities to help campuses stay nimble during trying times. This back-to-campus safety & security technologies challenge is envisioned to scout for those innovations and to bring the private and public sector together with research facilities to work on the post covid challenges.
+
+A campaign for startups and innovators to showcase solutions (customer-ready) that can help with ensuring safety & security of campuses as people return back to work. To help with cleanliness, hygiene, social distancing, detecting symptoms and such.
+                    </p>
+                </div>
+
+                <!-- <div class="row content">
+                  <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                    <img src="/assets/assets1/img/features-2.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                    <h3>About the program</h3>
+                    <p>
+                      Aligning to the Indian Government's goal to create 100 smart cities, we bring the private and
+        public sector together with research facilities to work on the challenges of smart cities.
+
+                    </p>
+                    <p>
+                      Our vision to support and scale startups that are building sustainable, inclusive and innovative
+        solutions for smart cities. It is a 1 month-long program that gives selected startups an
+        opportunity to pitch the to the leaders in the smart city ecosystem and to win an equity-free
+        grant of 10 Lakhs for further development
+                    </p>
+                  </div>
+                </div> -->
+
+                <!-- <div class="row content">
+                  <div class="col-md-5" data-aos="fade-right">
+                    <img src="/assets/assets1/img/features-3.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-md-7 pt-5" data-aos="fade-left">
+                    <h3>Why</h3>
+                    <p>Smart city technology can make cities more effective and efficient, which is necessary given
+                      the projected rapid growth in urban populations over the next few decades. Living labs is all
+                      about using technology and data purposefully to make better decisions and deliver a better
+                      quality of life. By connecting startups with those searching for smart city solutions, together we
+                      will amplify the transformation of city infrastructure and services to help enrich people’s lives</p>
+                  </div>
+                </div> -->
+
+              </div>
+            </section><!-- End About Section -->
+
+            <!-- ======= Services Section ======= -->
+            <section id="features" class="features section-bg">
+              <div class="container">
+                <div class="row content">
+                  <!-- <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                    <img src="/assets/assets1/img/features-2.svg" class="img-fluid" alt="">
+                  </div> -->
+                  <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                    <h3>Focus Areas</h3>
+                    <ul>
+                      <li><i class="icofont-check"></i>Testing and screening for people on the campus</li>
+                      <li><i class="icofont-check"></i>Automatic cleaning and sanitation </li>
+                      <li><i class="icofont-check"></i>Crowd control/monitoring  (people, vehicles, Queue/ Social distancing)</li>
+                      <li><i class="icofont-check"></i>Remote temperature/health monitoring</li>
+                      <li><i class="icofont-check"></i>Air quality to prevent infection(Mitigation of covid aerosols in the campuses)</li>
+                      <li><i class="icofont-check"></i>Social distancing and contactless solutions for commerce</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- <div class="row">
+                  <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="/assets/assets1/img/services-1.jpg" alt=".">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title" ><a href="">Water Management and Water Supply/Distribution</a></h5>
+                        <ul>
+                          <li>Extent of non-revenue water (NRW)</li>
+                          <li>Quality of water supplied</li>
+                          <li>Efficiency in collection of water supply-related charges</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="/assets/assets1/img/services-2.jpg" alt=".">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="">Waste Management</a></h5>
+                        <ul>
+                          <li>Extent of segregation of municipal solid waste</li>
+                          <li>Household level coverage of solid waste management services</li>
+                          <li>Efficiency of collection of municipal solid waste</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="/assets/assets1/img/services-3.jpg" alt=".">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="">Safety and Security</a></h5>
+                        <ul>
+                          <li>Safe environment for pedestrians after dark</li>
+                          <li>Public transport (metros, buses), Tracking systems</li>
+                          <li>Road safety (reduced speed, safe crossing, cycle paths etc.eas pedestrian)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="/assets/assets1/img/services-4.jpg" alt=".">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="">Health</a></h5>
+                        <ul>
+                          <li>Air quality</li>
+                          <li>COVID/Pandemic related solutions</li>
+                          <li>ICT solutions to improve the healthcare system (telemedicine)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="/assets/assets1/img/services-3.jpg" alt=".">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="">Safety and Security</a></h5>
+                        <ul>
+                          <li>Safe environment for pedestrians after dark</li>
+                          <li>Public transport (metros, buses), Tracking systems</li>
+                          <li>Road safety (reduced speed, safe crossing, cycle paths etc.eas pedestrian)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="/assets/assets1/img/services-4.jpg" alt=".">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="">Health</a></h5>
+                        <ul>
+                          <li>Air quality</li>
+                          <li>COVID/Pandemic related solutions</li>
+                          <li>ICT solutions to improve the healthcare system (telemedicine)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+
+              </div>
+            </section><!-- End Services Section -->
+
+            <!-- ======= Features Section ======= -->
+            <section id="features" class="features section-bg">
+              <div class="container">
+
+                <!-- <div class="section-title">
+                  <h2 data-aos="fade-in">Features</h2>
+                  <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div> -->
+
+                <div class="row content">
+                  <div class="col-md-5" data-aos="fade-right">
+                    <img src="/assets/assets1/img/features-1.svg" class="img-fluid" width="200px" height="100px" alt="">
+                  </div>
+                  <div class="col-md-7 pt-4" data-aos="fade-left">
+                    <h3>Why Should You Apply?</h3>
+                    <p>
+                    Finalists get a chance to:
+                    </p>
+                    <ul>
+                      <li><i class="icofont-check"></i> Set up a live demo in the smart campus at IIIT H. Cost will be covered by IIITH.</li>
+                      <li><i class="icofont-check"></i> Showcase the solutions to IT park chiefs, Facility managers, education institutions and other corporates invited.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="row content">
+                  <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                    <img src="/assets/assets1/img/features-2.svg" class="img-fluid" width="300px" height="150px" alt="">
+                  </div>
+                  <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                    <h3>Who Should Apply?</h3>
+                    <ul>
+                      <li><i class="icofont-check"></i> Startups/teams working on the above-mentioned areas in the post prototype stage.</li>
+                      <li><i class="icofont-check"></i> Startups/teams with a working prototype with market validation preferred but not mandatory.</li>
+                    </ul>
+                  </div>
+                </div>
+
+              <!--  <div class="row content">
+                  <div class="col-md-5" data-aos="fade-right">
+                    <img src="/assets/assets1/img/features-3.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-md-7 pt-5" data-aos="fade-left">
+                    <h3>Challenge Timeline</h3>
+                    <ul>
+                      <li><i class="icofont-check"></i> Start of the campaign : 1st May
+                      </li>
+                      <li><i class="icofont-check"></i> Last date to apply : 1st June</li>
+                      <li><i class="icofont-check"></i> Final Short list of Startups : 5th June
+                      </li>
+                      <li><i class="icofont-check"></i> Pitch day : 14th June
+                      </li>
+                      <li><i class="icofont-check"></i> Finale workshop(winner announcement & PR) : 16th June
+                      </li>
+                    </ul>
+                  </div>
+                </div> -->
+
+                <!-- <div class="row content">
+                  <div class="col-md-7 pt-5" data-aos="fade-left">
+                    <h3>Selection Process</h3>
+                    <ul>
+                      <li><i class="icofont-check"></i> Start of the campaign : 21st Apr
+                      </li>
+                      <li><i class="icofont-check"></i> Last date to apply : 1st June</li>
+                      <li><i class="icofont-check"></i> Finalise the list of corporates (Target companies for the demo day) : 1st May
+                      </li>
+                      <li><i class="icofont-check"></i> Final Short list of Startups : 5th June
+                      </li>
+                      <li><i class="icofont-check"></i> Pitch day : 14th June
+                      </li>
+                      <li><i class="icofont-check"></i> Finale workshop(winner announcement & PR) : 16th June
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-5" data-aos="fade-right">
+                    <img src="/assets/assets1/img/features-3.svg" class="img-fluid" alt="">
+                  </div>
+                </div>
+                 -->
+
+                <div class="row content">
+
+                  <div data-aos="fade-left">
+                    <h3>About SmartCity Living Labs</h3>
+                    <p style="text-align: justify;">
+                      Smart City Research Center is set up with support from MEITY (Government of India), Smart City Mission and Government of Telangana at IIIT-H. The research center includes a Living Lab, which is a setup with support from EBTC and Amsterdam Innovation Arena. The Building on the Smart Campus @ IIITH Smart City Research Center is based on the following Objectives: There is a huge push for smart cities in India under the Smart Cities Mission, a new initiative by the Government of India to drive economic growth and improve the quality of life of people by enabling local development and harnessing technology to create smart outcomes for citizens. In this ambitious project, 100 cities are being covered for the duration of 5 years with a budget of Rs.100 crore per city per year. The goal of the Living Lab plan is to create an urban area enhancing three value domains: social, economic and environmental. Thus developed Living Lab shall enable the following:
+
+                    </p>
+                    <ul>
+                      <li><i class="icofont-check"></i>Generate data for research</li>
+                      <li><i class="icofont-check"></i>Get expertise in IoT for Smart Cities related research and deployment </li>
+                      <li><i class="icofont-check"></i>Creation of a viable innovation and demand driven ecosystem in universities.
+                      </li>
+                      <li><i class="icofont-check"></i>Provide a test bench for IoT based Smart City implementations to start-ups as well as big companies</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </section><!-- End Features Section -->
+
+
+        <!--End Sections-->
+
+
+
+
+        <!--FAQ-->
+        <!-- <div class="container ">
+          <div class="panel-group" id="faqAccordion">
+              <div class="panel panel-default ">
+                <h3 style="font-family: Raleway; font-weight: 700; color: #213b52;">FAQ</h3>
+                  <div class="panel-heading ">
+                       <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  style="font-size: 1.1rem; font-family: Open Sans;" >Q: What is the selection process?</a>
+                    </h4>
+
+                  </div>
+                  <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                      <div class="panel-body">
+                           <h5><span class="label label-primary" style="font-size: 1.1rem; font-family: Open Sans;">Answer</span></h5>
+
+                           <ul>
+                            <li>Initial screening will be done by the living labs teams</li>
+                            <li>First level selection will be done by a panel of members from Living Labs, MeitY and Smart city tech MNCs</li>
+                            <li>Finalist will be decided by a panel of 10 Smart city tech MNCs</li>
+                          </ul>
+
+
+                      </div>
+                  </div>
+              </div>
+              <div class="panel panel-default ">
+                  <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                       <h4 class="panel-title">
+                          <a class="ing" style="font-size: 1.1rem; font-family: Open Sans;" >Q: What is the Judgement criteria?</a>
+                    </h4>
+
+                  </div>
+                  <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                      <div class="panel-body">
+                           <h5><span class="label label-primary" style="font-size: 1.1rem; font-family: Open Sans;">Answer</span></h5>
+
+                           <ul>
+                            <li>Product innovation & Tech competency</li>
+                            <li>Market readiness</li>
+                            <li>Product fitment and need in Indian Context</li>
+                            <li>Revenue generation potential</li>
+                            <li>Potential for scale</li>
+                          </ul>
+
+                      </div>
+                  </div> -->
+
+                  <div class="container">
+                    <div class="panel-group" id="accordion">
+                      <div class="faqHeader"><h3 style="font-family: Raleway; font-weight: 700; color: #213b52;">FAQ</h3></div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" style="font-size: 1.1rem; font-family: Open Sans; color: rgba(0, 0, 0, 0.795);">Q: What is the challenge Timeline?</a>
+                              </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                <ul>
+                                  <li>Start of the campaign : 21st October
+                                  </li>
+                                  <li>Last date to apply : 29th October</li>
+                                  <li>Final Short list of Startups : 3rd November
+                                  </li>
+                                  <li>Demo day : 8th November
+                                  </li>
+                                  <li>Finale workshop(winner announcement & PR) : 12th November
+                                  </li>
+                                </ul>
+
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" style="font-size: 1.1rem; font-family: Open Sans; color: rgba(0, 0, 0, 0.795);">Q: What is the selection process?</a>
+                              </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                <ul>
+                                  <li>Initial screening will be done by the living labs teams</li>
+                                  <li>First level selection will be done by a panel of members from Living Labs, MeitY and Smart city tech MNCs</li>
+                                  <li>Finalist will be decided by a panel of 10 Smart city tech MNCs</li>
+                                </ul>
+
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                            <div class="hero-container" style="margin-top: 70px;">
+                              <div class="partnersHeader"><h3 style="font-family: Raleway; font-weight: 700; color: #213b52;">Partners :</h3></div>
+                              <ul>
+                                <li>Ministry of Electronics & Information Technology</li>
+                                <li>National Smart City Mission </li>
+                                <li>Govt of Telangana.  </li>
+                              </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="partners panel-default">
+                        <div class="hero-container" style="margin-top: 70px;">
+                          <div class="partnersHeader"><h3 style="font-family: Raleway; font-weight: 700; color: #213b52;">Corporate Partners :</h3></div>
+                          <ul>
+                            <li>CBRE </li>
+                            <li>Intel </li>
+                            <li>Silicon Labs </li>
+                          </ul>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+          <div class="pt-3 mb-4">
+
+            <!-- <div class="text-center outdated">
+              <button type="button" style="background-color: #f1a40a; border-color:#f1a40a" class="btn btn-primary">Challenge ended</button>
+            </div> -->
+
+          </div>
+
