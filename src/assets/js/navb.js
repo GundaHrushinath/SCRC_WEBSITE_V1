@@ -135,7 +135,7 @@ var copyright='<div class="container">'+
         'Open source design from <a href="https://bootstrapmade.com/">BootstrapMade</a>, customised by <a href="https://researchweb.iiit.ac.in/~ayush.dwivedi">Ayush Kumar Dwivedi</a> and <a href="http://www.linkedin.com/in/ashrit-rout-610b5a1a2">Ashrit Rout</a>.'+
       '</div>'+
       '<div class="credits">'+
-        'Restructured by <a href="https://gundahrushinath.github.io/" target="_blank">Hrushinath Gunda</a> and <a href="">Leo J Francis</a>.'+
+        'Restructured by <a href="https://gundahrushinath.github.io/" target="_blank">Hrushinath Gunda</a> and <a href="https://github.com/leojfrancis">Leo J Francis</a>.'+
       '</div>'+
     '</div>';
 
